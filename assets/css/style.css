@@ -15,11 +15,10 @@
 	text-align: center;
 }
 
-.button-display li {
-  	list-style: none;
+.topic-button {
   	display: block;
-  	padding: 5px 15px;
-  	margin-top: 5px;
+  	padding: 0 15px;
+  	margin: 5px 5px;
 }
 
 .gif-div {
