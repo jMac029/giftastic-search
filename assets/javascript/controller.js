@@ -30,13 +30,13 @@ var controller = {
 
 
 	      		var gifDiv = $('<div>');
-	      		gifDiv.addClass('gif-div');
+	      		gifDiv.addClass('col-4 gif-div');
 
-	      		var p = $('<p>');
-	      		p.addClass('rating');
+	      		var rated = $('<h5>');
+	      		rated.addClass('rating');
 
 	      		// get the rating of each gif to display
-	      		p.text("rated: "+results[i].rating);
+	      		rated.text("rated: "+results[i].rating);
 
 	      		// jQuery variable to for gifImages to go into
 	      		var gifImage = $('<img>')
@@ -47,7 +47,7 @@ var controller = {
 	      		gifImage.attr("gif-state", "still")
 	      		gifImage.addClass('image-gif');
 
-	      		gifDiv.prepend(p);
+	      		gifDiv.prepend(rated);
 
 	      		gifDiv.prepend(gifImage);
 
