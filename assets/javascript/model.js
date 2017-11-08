@@ -2,7 +2,7 @@
  // live for the project
 
 // Array of Emotion Gifs found on Giphy
-var topics = ["angry", "bored", "disappointed", "drunk", "embarassed", "excited", "frustrated", "happy", "hungry", "inspired", "lonely", "love", "nervous", "pain", "reaction", "relaxed", "sad", "sassy", "scared", "shocked", "sick", "stressed", "surprised", "suspicious", "tired", "unimpressed", "mind blown", "awkward"];
+var topics = ["eye roll", "no", "kiss", "happy", "wink", "excited", "frustrated", "sarcastic", "smile", "crying", "interested", "love", "lol", "dancing", "reaction", "judging you", "sleepy", "agree", "bored", "shocked", "yes", "stressed", "surprised", "serious", "tired", "unimpressed", "mind blown", "mic drop"];
 
 var buttonColors = [
 	{color: "btn-primary"},
