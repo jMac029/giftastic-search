@@ -7,7 +7,7 @@
 var controller = {
 
 	topicButtonClick: () => {
-	 	$(".topic-button").on("click", function() {
+	 	$("body").on("click", ".topic-button", function() {
 	      var emotion = $(this).text();
 	      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
 	        emotion + "&api_key=cp2YE3vqeMKUmaukPsqx72MrfGtu6uxp&limit=10";
@@ -58,6 +58,20 @@ var controller = {
 	      	})
 
 	    });
+	},
+
+	addTopicToArray: () => {
+		$("body").on("click",".add-button", function() {
+			// prevent form from submitting
+      		event.preventDefault();
+
+			var newTopic = $('#new-topic').val().trim();
+			console.log(newTopic);
+			topics.push(newTopic);
+			$('#new-topic').val("");
+			view.displayButtons();
+		});
+
 	},
 
 	playGifs: () => {
