@@ -2,3 +2,22 @@
 	This is where our own custom CSS will live 
 	in case we need to overwrite Bootstrap
 */
+
+/* Header */
+
+
+.jumbotron {
+	/* Override jumbotron background color */
+	background-color: #24A1B7 !important;
+}
+.header {
+	color: white;
+	text-align: center;
+}
+
+.button-display li {
+  list-style: none;
+  display: block;
+  padding: 5px 15px;
+  margin-top: 5px;
+}
