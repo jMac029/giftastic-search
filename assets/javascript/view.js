@@ -20,9 +20,8 @@ var view = {
 
 		for (var i = 0; i < topics.length; i++) {
 			var topicButtons = $('<button>').addClass('topic-button btn').text(topics[i]);
-				for (var j = 0; j < buttonClasses.length; j++) {
-				topicButtons.addClass(buttonClasses[j])
-			}
+				topicButtonColor = buttonColors[Math.floor(Math.random() * buttonColors.length)];
+				topicButtons.addClass(topicButtonColor.color);
 			$('.button-display').append(topicButtons);
 		}
 
