@@ -4,6 +4,8 @@
 window.onload = () => {
 
 	view.displayButtons();
+	controller.topicButtonClick();
+	controller.playGifs();
 
 };
 
@@ -23,8 +25,6 @@ var view = {
 			topicButtons.append(topic);
 			$('.button-display').append(topicButtons);
 		}
-
-	topicButtonClick();
 
 	},
 
