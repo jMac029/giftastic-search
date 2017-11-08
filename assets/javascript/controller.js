@@ -10,7 +10,7 @@ var controller = {
 	 	$("body").on("click", ".topic-button", function() {
 	      var emotion = $(this).text();
 	      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-	        emotion + "&api_key=cp2YE3vqeMKUmaukPsqx72MrfGtu6uxp&limit=10";
+	        emotion + "&api_key=cp2YE3vqeMKUmaukPsqx72MrfGtu6uxp&limit=12";
 
 	      $.ajax({
 	        url: queryURL,
@@ -32,7 +32,7 @@ var controller = {
 	      		var gifDiv = $('<div>');
 	      		gifDiv.addClass('col-4 gif-div');
 
-	      		var rated = $('<h5>');
+	      		var rated = $('<p>');
 	      		rated.addClass('rating');
 
 	      		// get the rating of each gif to display
