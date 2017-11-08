@@ -2,7 +2,7 @@
  // live for the project that connects the view and model
 
 
-
+// Controller Object to handle click events
 
 var controller = {
 
@@ -61,7 +61,7 @@ var controller = {
 	},
 
 	playGifs: () => {
-		$('.image-gif').on("click", function() {
+		$("body").on("click", ".image-gif", function() {
 
 			var state = $(this).attr("gif-state");
 		      // If the clicked image's state is still, update its src attribute to what its gif-animate value is.
@@ -76,6 +76,6 @@ var controller = {
 		      }
 
 		});
-	}
+	},
 
-}
+};
